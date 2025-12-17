@@ -470,3 +470,15 @@ section {
 .card:hover::before {
   opacity: 1;
 }
+@keyframes feedbackScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-feedback {
+  animation: feedbackScroll 40s linear infinite;
+}
