@@ -483,29 +483,3 @@ section {
 .animate-feedback {
   animation: feedbackScroll 40s linear infinite;
 }
-
-/* mobile — не мешает скроллу */
-@media (max-width: 768px) {
-  .hero-3d-canvas canvas {
-    pointer-events: none;
-  }
-}
-
-/* Ниже — скролл ВСЕГДА */
-@media (max-width: 768px) {
-  .hero-3d-zone {
-    height: 60vh;        /* можно меньше */
-  }
-}
-.hero-3d-zone {
-  height: 55vh;        /* регулируй: 50–60vh */
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-3d-zone canvas {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
