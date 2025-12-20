@@ -3,7 +3,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 const FloatingTelegramButton = () => {
   return (
     <a
-      href="https://t.me/+Xx1OGdOcr7hmMDIy"
+      href="https://t.me/+_4dRLLqfLoM3ODky"
       target="_blank"
       rel="noopener noreferrer"
       className="

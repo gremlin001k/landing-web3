@@ -42,7 +42,7 @@ const NavBar = () => {
           </ul>
         </nav>
 
-        <a href="https://t.me/+Xx1OGdOcr7hmMDIy" target="_blank" className="contact-btn group">
+        <a href="https://t.me/+_4dRLLqfLoM3ODky" target="_blank" className="contact-btn group">
           <div className="inner">
             <span>Оставить заявку</span>
           </div>
