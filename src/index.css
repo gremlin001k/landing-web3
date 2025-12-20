@@ -102,6 +102,12 @@ section {
     @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
     pointer-events: auto;
   }
+  .hero-3d-canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
   .navbar {
     @apply fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
@@ -482,4 +488,31 @@ section {
 
 .animate-feedback {
   animation: feedbackScroll 40s linear infinite;
+}
+.hero-logo {
+    animation: float 5s ease-in-out infinite;
+    width: 220px;
+    height: auto;
+    z-index: 1;
+    filter: drop-shadow(0 0 25px rgba(0, 255, 200, 0.35));
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+/* Градиентное свечение */
+.logo-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 200, 0.45),
+    rgba(0, 255, 200, 0.15),
+    transparent 70%
+  );
+  filter: blur(50px);
+  z-index: 0;
 }

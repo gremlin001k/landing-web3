@@ -1,5 +1,5 @@
 import Testimonials from "./sections/Testimonials";
-import Contact from "./sections/Contact";
+import InterestBlock from "./sections/InterestBlock";
 import Experience from "./sections/Experience";
 import Hero from "./sections/Hero";
 import Navbar from "./components/NavBar";
@@ -10,6 +10,7 @@ const App = () => (
     <Navbar />
     <Hero />
     <Experience />
+    <InterestBlock />
     <Testimonials />
     <FloatingTelegramButton />
   </>

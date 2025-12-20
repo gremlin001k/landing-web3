@@ -7,13 +7,13 @@ import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
-  useGSAP(() => {
-    gsap.fromTo(
-      ".hero-text h1",
-      { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
-    );
-  });
+  // useGSAP(() => {
+  //   gsap.fromTo(
+  //     ".hero-text h1",
+  //     { y: 50, opacity: 0 },
+  //     { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+  //   );
+  // });
 
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -46,12 +46,12 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>начни уже сегодня</h1>
-              <h1>с любой суммы</h1>
+              <h1>ЗАРАБАТЫВАЕШЬ ТЫ</h1>
+              <h1>ЗАРАБАТЫВАЕМ МЫ</h1>
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Мы — команда, специализирующаяся на межсетевом крипто-арбитраже.
+              Мы crypto community и мы заинтересованы в поиске людей в команду для работы и заработка на крипте вместе с нами.
             </p>
           </div>
         </header>
@@ -59,7 +59,12 @@ const Hero = () => {
         {/* RIGHT: 3D Model or Visual */}
         <figure>
           <div className="hero-3d-canvas">
-            <HeroExperience />
+            <div className="logo-glow" />
+                <img
+                  src="./images/logo.jpg"
+                  alt="Logo"
+                  className="hero-logo"
+                />
           </div>
         </figure>
       </div>
